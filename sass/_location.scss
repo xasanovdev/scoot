@@ -1,0 +1,72 @@
+@import 'variables';
+
+.location {
+
+    // .location__section
+
+    &__section {
+        margin-top: 120px;
+    }
+
+    // .location__container
+
+    &__container {
+    }
+
+    // .location__wrapper
+
+    &__wrapper {
+        padding: 0 15px;
+    }
+
+    // .location__map
+
+    &__map {
+    }
+
+    // .location__message-up
+
+    &__message-up {
+        margin-top: 120px;
+        display: flex;
+        align-items: center;
+        gap: 105px;
+        @media screen and (max-width: 1070px) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    // .location__message-title
+
+    &__message-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        @media screen and (max-width: 1070px) {
+            flex-direction: column;
+            text-align: center;
+            gap: 40px;
+        }
+        h6{
+            @include head__title;
+            color: $dark-nevy;
+            @media screen and (max-width: 1070px) {
+                max-width: 457px;
+            }
+        }
+        p{
+            @include text;
+            color: $dim-grey;
+            max-width: 445px;
+            @media screen and (max-width: 1070px) {
+                max-width: 573px;
+            }
+        }
+    }
+}
+.container {
+}
+.button {
+}

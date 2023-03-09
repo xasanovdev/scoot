@@ -1,0 +1,70 @@
+@import 'variables';
+
+.careers {
+
+    // .careers__section
+
+    &__section {
+        margin-top: 120px;
+    }
+
+    // .careers__wrapper
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 100px;
+        @media screen and (max-width: 690px) {
+            padding: 0 50px;
+        }
+
+    }
+
+    // .careers__wrapper-content
+
+    &__wrapper-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 40px;
+        width: 100%;
+        background-color: $snow;
+        transition: .4s ease;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 1px 22px 55px -27px rgba(80,96,189,0.64);
+            -webkit-box-shadow: 1px 22px 55px -27px rgba(80,96,189,0.64);
+            -moz-box-shadow: 1px 22px 55px -27px rgba(80,96,189,0.64);
+        }
+        @media screen and (max-width: 570px) {
+            text-align: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+    }
+
+    // .careers__wraper-title
+
+    &__wraper-title {
+    }
+
+    // .careers__wraper-job
+
+    &__wraper-job {
+        @include subtitle;
+        color: $dark-nevy;
+    }
+
+    // .careers__wraper-location
+
+    &__wraper-location {
+        margin-top: 8px;
+        @include text;
+        color: $dark-nevy;
+    }
+}
+.button {
+}
